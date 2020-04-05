@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangule</title>
+    <style>
+        *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            background-color: #f00;
+            margin: 50px auto;
+            width: 300px;
+            height: 200px;
+            border-radius: 50px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container .triangule{
+            border-right: 50px solid transparent;
+            border-left: 50px solid transparent;
+            border-bottom: 100px solid #fff;
+            margin: auto;
+            position: absolute;
+            left: 110px;
+            top: 50px;
+            height: 0;
+            width: 0;
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="triangule"></div>
+    </div>
+</body>
+</html>
